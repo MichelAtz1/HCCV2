@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastrar_usuario"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundoapp"
+    tools:context="br.desenvolvedor.michelatz.aplicativohcc.CadastrarUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:background="@drawable/border"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tabela"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="@string/txtNome"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textSize="17sp"
+                        android:id="@+id/textView3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:layout_span="2"
+                        android:textStyle="italic"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:typeface="sans"
+                        android:textColor="#FFF"
+                        android:textColorHint="#fff"
+                        android:ems="10"
+                        android:id="@+id/edtNome"
+                        android:hint="@string/hintNome"
+                        android:drawableLeft="@drawable/ic_action_user" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="@string/txtEmail"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:typeface="sans"
+                        android:textSize="17sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/edtEmail"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#FFF"
+                        android:textColorHint="#fff"
+                        android:hint="@string/hintEmail"
+                        android:layout_span="2"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:drawableLeft="@drawable/ic_action_mail"/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="@string/txtSenha"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_span="2"
+                        android:typeface="sans"
+                        android:textSize="17sp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/edtSenha"
+                        android:textStyle="italic"
+                        android:typeface="sans"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_span="2"
+                        android:textColor="#FFF"
+                        android:textColorHint="#fff"
+                        android:hint="@string/hintSenha"
+                        android:drawableLeft="@drawable/ic_action_lock_closed"/>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:text="@string/btSalvar"
+                        android:onClick="salvar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button6"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/botao" />
+
+                </TableRow>
+            </TableLayout>
+    </ScrollView>
+</RelativeLayout>

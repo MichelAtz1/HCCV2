@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">AppMercado</string>
+    <string name="title_activity_principal_menu">PrincipalMenu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_lista_ofertas">ListaOfertas</string>
+    <string name="title_activity_login">Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_locacoes">Locacoes</string>
+    <string name="title_activity_inseri_poste">InseriPoste</string>
+    <string name="title_activity_cadastra_extrutura">CadastraExtrutura</string>
+    <string name="title_activity_consumidor_equipamento">ConsumidorEquipamento</string>
+    <string name="title_activity_adiciona_consumidores">AdicionaConsumidores</string>
+    <string name="title_activity_localizacao">Localizacao</string>
+    <string name="title_activity_inseri_imagem">InseriImagem</string>
+    <string name="title_activity_inseri_imagem_documento">InseriImagemDocumento</string>
+    <string name="title_activity_lista_coordenadas">ListaCoordenadas</string>
+    <string name="title_activity_lacacacoes_finalizadas">LacacacoesFinalizadas</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="app">Aplicativo HCC</string>
+    <string name="emailCoelba">hcc.coelba@gmail.com</string>
+    <string name="tituloLocacao">Locações</string>
+    <string name="tituloLocacoesFinalizadas">Locações Finalizadas</string>
+    <string name="tituloSair">Sair</string>
+    <string name="vazio">  </string>
+    <string name="tituloMapaLocacoes">Mapa de locações</string>
+
+    <string name="txtCliente"> Cliente</string>
+    <string name="txtCodigo"> Codigo</string>
+    <string name="txtData"> Data</string>
+    <string name="txtNumeroPoste"> Poste numero</string>
+    <string name="txtNomeDocumento"> Nome do documento</string>
+    <string name="txtBoasVindas">Bem Vindo!</string>
+    <string name="txtDescricaoApp"> Este aplicativo foi desenvolvido pela HCC - Engenharia Elétrica e tem por objetivo coletar dados topográficos. \n</string>
+    <string name="txtFotos">Fotos:</string>
+    <string name="txtNumeroNota">  Nota:</string>
+    <string name="txtNomeCliente">  Cliente:</string>
+    <string name="txtPoste">Poste:</string>
+    <string name="txtDocumentos">Documentos:</string>
+    <string name="txtTipo">Tipo: </string>
+    <string name="txtAltura">Altura: </string>
+    <string name="txtCapacidade">Capacidade: </string>
+    <string name="txtVidaUtil">Fim da Vida Útil? </string>
+    <string name="txtSim">Sim</string>
+    <string name="txtNao">Não</string>
+    <string name="txtNumeroPlaca">Numero da placa: </string>
+    <string name="txtEstrutura">Estruturas:</string>
+    <string name="txtIluminacao">Iluminação publica?</string>
+    <string name="txtTelefonia">Telefonia: </string>
+    <string name="txtEstai">Estai/Escora/BC: </string>
+    <string name="txtAcesso">Acesso</string>
+    <string name="txtTipoSolo">Tipo do Solo: </string>
+    <string name="txtTipoArquivo">  Tipo de Arquivo:</string>
+    <string name="txtConsumidores">Consumidores:</string>
+    <string name="txtCadastroEquipamento">Cadastro Equipamento:</string>
+    <string name="txtTipoEquipamento">Tipo Equipamento:</string>
+    <string name="txtTipoEstrutura">Tipo de Estrutura:</string>
+    <string name="txtDescricao"> Descrição:</string>
+    <string name="txtLadoConsumidor">Lado do Consumidor:</string>
+    <string name="txtRamal">Ramal:</string>
+    <string name="txtNumeroNota2">Numero da Nota: </string>
+    <string name="txtEmail">  E-mail:</string>
+    <string name="txtSenha">  Senha:</string>
+    <string name="txtLink">Cadastre-se no Aplicativo</string>
+    <string name="txtNome">  Nome:</string>
+
+    <string name="txtD10">D10</string>
+    <string name="txtW01">W01</string>
+    <string name="txtS03">S03</string>
+    <string name="txtW02">W02</string>
+    <string name="txtAF">AF</string>
+    <string name="txtW031">W03 (10mm)</string>
+    <string name="txtQ10">Q10</string>
+    <string name="txtW032">W03 (16mm)</string>
+    <string name="txtQ25">Q25</string>
+    <string name="txtW033">W03 (25mm)</string>
+    <string name="txtQ35">Q35</string>
+
+    <string name="hintNumeroPlaca">Digite o N. da placa</string>
+    <string name="hintDigitar">Digite aqui</string>
+    <string name="hintDescricao"> Insira descrição</string>
+    <string name="hintNota">Digite o numero da Nota</string>
+    <string name="hintCliente">Digite o Nome do cliente</string>
+    <string name="hintEmail"> Insira seu E-mail</string>
+    <string name="hintSenha"> Insira sua Senha</string>
+    <string name="hintNome">Insira seu nome</string>
+
+    <string name="btSalvar">Salvar</string>
+    <string name="btSinalPositivo">+</string>
+    <string name="btEditar">Editar</string>
+    <string name="btFinalizar">Finalizar</string>
+    <string name="btProximo">Próximo</string>
+    <string name="btTirarFoto">Tirar Foto</string>
+    <string name="btEntrar">Entrar</string>
+
+    <string name="bt8">8</string>
+    <string name="bt9">9</string>
+    <string name="bt10">10</string>
+    <string name="bt11">11</string>
+    <string name="bt12">12</string>
+    <string name="bt13">13</string>
+    <string name="bt14">14</string>
+    <string name="bt15">15</string>
+    <string name="bt16">16</string>
+    <string name="bt17">17</string>
+    <string name="bt18">18</string>
+
+    <string name="btTL">TL</string>
+    <string name="btNET">NET</string>
+    <string name="btFO">FO</string>
+
+    <string name="btDireita">Direita</string>
+    <string name="btEsquerda">Esquerda</string>
+
+    <string name="btPrimaria">Primária</string>
+    <string name="btSecundaria">Secundária</string>
+
+    <string name="btLavoura"> 1 - Lavoura</string>
+    <string name="btCampo"> 2 - Campo</string>
+    <string name="btEstrada"> 3 - Estrada</string>
+    <string name="btPatio"> 4 - Pátio</string>
+    <string name="btRua"> 5 - Rua</string>
+    <string name="btCalcada"> 6 - Calçada</string>
+    <string name="btMato"> 7 - Mato</string>
+    <string name="btSemAcesso"> 8 -  Sem acesso</string>
+
+    <string name="btFacilEscavacao">A - Fácil Escavação</string>
+    <string name="btPequenosPedregulhos">B - Pequenos Pedregulhos</string>
+    <string name="btSoloRochoso">C - Solo Rochoso</string>
+
+    <string name="descricaoIconeEdicao">Botão de edição!</string>
+    <string name="descricaoIconeExclusao">Botão de exclusão!</string>
+    <string name="descricaoIconeHCC">Icone HCC</string>
+    <string name="descricaoTextoIconeHCC">HCC Engenharia Eletrica</string>
+    <string name="descricaoCamera">Imagem de uma camera</string>
+    <string name="descricaoLogin">Boneco do Android segurando logo-tipo da HCC</string>
+
+</resources>

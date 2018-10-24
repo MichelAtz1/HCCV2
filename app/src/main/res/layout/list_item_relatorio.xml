@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewConversas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardBackgroundColor="#FFF"
+        card_view:contentPadding="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/txtCliente"
+                    android:textSize="20sp"
+                    android:id="@+id/txtCliente"
+                    android:layout_marginLeft="2dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:text="@string/txtCodigo"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:layout_marginLeft="2dp"
+                        android:id="@+id/txtCodigo"
+                        android:background="#FFFFFF"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txtData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="#FFFFFF"
+                        android:gravity="right"
+                        android:text="@string/txtData"
+                        android:textSize="13sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

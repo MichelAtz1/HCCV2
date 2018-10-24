@@ -1,0 +1,291 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCC"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.desenvolvedor.michelatz.aplicativohcc.GerenciarLocacoes"
+    tools:showIn="@layout/app_bar_locacoes">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:id="@+id/spnLocacoesAbertas"
+                            android:background="@drawable/botao"
+                            android:layout_span="5"
+                            android:layout_height="55dp"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/botao"
+                            android:onClick="addLocacao"
+                            android:text="@string/btSinalPositivo"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:id="@+id/button" />
+
+                </TableRow>
+
+                </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:text="@string/txtNumeroNota"
+                        android:textStyle="bold"
+                        android:layout_span="6"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_span="6"
+                        android:ems="10"
+                        android:id="@+id/edtNumeroNota"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/txtNomeCliente"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_span="6"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="15sp"
+                        android:layout_span="6"
+                        android:ems="10"
+                        android:textStyle="bold"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:id="@+id/edtCliente"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/vazio"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_span="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/botao"
+                        android:onClick="editarCliente"
+                        android:textColor="#fff"
+                        android:text="@string/btEditar"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="1"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/txtPoste"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_span="5"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold"
+                        android:id="@+id/textView" />
+
+                    <Button
+                        android:text="@string/btSinalPositivo"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:textSize="25sp"
+                        android:layout_span="1"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:onClick="adicionarPoste"
+                        android:background="@drawable/botao" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#000" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/listViewPostes" />
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/border"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/txtDocumentos"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_span="5"
+                        android:layout_marginLeft="30dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:text="@string/btSinalPositivo"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:textSize="25sp"
+                        android:layout_span="1"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:onClick="adicionarDocumento"
+                        android:background="@drawable/botao"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#000" />
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/listViewDocumentos" />
+
+            </TableLayout>
+
+            <Button
+                android:text="@string/btFinalizar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="salvarLocacao"
+                android:background="@drawable/botao"/>
+
+        </LinearLayout>
+
+</ScrollView>

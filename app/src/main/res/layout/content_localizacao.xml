@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#CCC"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.desenvolvedor.michelatz.aplicativohcc.Localizacao"
+    tools:showIn="@layout/activity_localizacao">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_margin="5dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:id="@+id/tableLayout">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:background="@drawable/border"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+
+                        <TextView
+                            android:text="@string/txtFotos"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp"
+                            android:layout_span="4"
+                            android:textStyle="bold"
+                            android:typeface="sans"
+                            android:id="@+id/textView" />
+
+                        <Button
+                            android:text="@string/btSinalPositivo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:textSize="20sp"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textColor="#FFF"
+                            android:onClick="inseriImagem"
+                            android:background="@drawable/botao" />
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="27dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#000" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/listViewFotosPostes" />
+
+                </TableLayout>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botao"
+                    android:onClick="salvarLocalizacao"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#FFF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="@string/btSalvar" />
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

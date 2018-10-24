@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.desenvolvedor.michelatz.aplicativohcc.CadastrarConsumidores"
+    tools:showIn="@layout/activity_adiciona_consumidores">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*"
+                android:id="@+id/tableLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/txtLadoConsumidor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#000" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grupLado"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioDireita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/btDireita"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioEsquerda"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btEsquerda"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/txtRamal"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#000" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tabela"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:shrinkColumns="*"
+                    android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal">
+
+                    <Spinner
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/botao"
+                        android:id="@+id/spnD10" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtD10"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/botao"
+                        android:id="@+id/spnW01" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/txtW01"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal">
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/botao"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/spnS03" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtS03"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/botao"
+                            android:id="@+id/spnW02" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtW02"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal">
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/botao"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/spnAF" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txtAF"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/botao"
+                            android:id="@+id/spnW031" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtW031"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal">
+
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/botao"
+                            android:id="@+id/spnQ10" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtQ10"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/botao"
+                            android:id="@+id/spnW032" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtW032"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal">
+
+
+                    <Spinner
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/botao"
+                        android:id="@+id/spnQ25" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/txtQ25"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/botao"
+                        android:id="@+id/spnW033" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/txtW033"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center_horizontal">
+
+
+                        <Spinner
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/botao"
+                            android:id="@+id/spnQ35" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/txtQ35"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp" />
+
+                    </TableRow>
+            </TableLayout>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botao"
+                    android:onClick="salvaConsumidor"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/btSalvar" />
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
